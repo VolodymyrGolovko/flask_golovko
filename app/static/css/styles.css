@@ -1,55 +1,61 @@
-html {
-    scroll-behavior: smooth;
+body{
+    background-color: linen;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+section{
+    width: 80%;
+}
+
+a{
+    font-size: 18px;
+}
+
+.my_navbar{
+    text-align: center;
+    background-color: azure;
+    padding: 0;
     margin: 0;
-    padding: 0;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    background-color: #333;
-    flex-direction: row;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-section {
+.my_nav-link{
+    display: inline-block;
+    width: auto;
     padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
+    font-size: 20px;
 }
 
-/* Адаптивність для менших екранів */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
+.footer-information{
+    height: 50px;
+    background-color: black;
 
-    section {
-        margin: 10px;
-    }
+    color: aliceblue;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-/* Фіксоване меню, яке завжди залишається зверху */
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+.info-text{
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-/* Відступ для основного контенту, щоб уникнути перекриття меню */
-main {
-    padding-top: 80px; /* налаштуйте залежно від висоти навігації */
+.sidebar {
+    position: sticky;
+    top: 100px;
+    margin-left: 85%;
+    width: fit-content;
+}
+
+.s_resume {
+    height: 300px;
+    margin-bottom: -300px;
+}
+
+.s_hi {
+    height: 150px;
+    margin-bottom: -150px;
 }
